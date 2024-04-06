@@ -5,7 +5,7 @@ Your one-stop destination for all the documentation about building Android can b
 
 ## Repo Init ##
 ```bash
-repo init -u https://github.com/StatiXOS/android_manifest.git -b udc-qpr1
+repo init -u https://github.com/StatiXOS/android_manifest.git -b udc-qpr2
 ```
 ## Sync Source ##
 ```bash
@@ -14,7 +14,7 @@ repo sync --force-sync --no-clone-bundle --current-branch --no-tags -j$(nproc --
 ## Build Time (Linux x86_64 ONLY) ##
 ```bash
 . build/envsetup.sh
-brunch statix_<DEVICE>-userdebug (or statix_<DEVICE>-user)
+brunch statix_<DEVICE>-<RELEASE>-userdebug (or statix_<DEVICE>-<RELEASE>-user)
 ```
 ### Submitting Patches ###
 
@@ -44,7 +44,7 @@ We are almost there! Now to push your patch set to Gerrit, type in the following
 
 * `<username>` - Your Gerrit username (which can be seen/set [here](https://review.statixos.com/#/settings/))
 * `<project>` - The git repo you are pushing to; all options can be viewed at [this link](https://review.statixos.com/#/admin/projects/)
-* `<branch>` - The git branch your change is based on; for projects using this manifest, it is `udc-qpr1`
+* `<branch>` - The git branch your change is based on; for projects using this manifest, it is `udc-qpr2`
 
 [View Code Review](https://review.statixos.com/)
 

@@ -7,7 +7,7 @@
 
   <!-- GitHub (StatiXOS) -->
   <remote  name="statix"
-           revision="udc-qpr1"
+           revision="udc-qpr2"
            fetch="https://github.com/StatiXOS/" />
 
   <!-- GitLab -->
@@ -54,12 +54,12 @@
   <project path="frameworks/native" name="android_frameworks_native" remote="statix" />
 
   <!-- Google Mobile Services -->
-  <project path="vendor/gms" name="sourajitk/google-mobile-services" remote="gitea" revision="udc-qpr1" clone-depth="1" />
+  <project path="vendor/gms" name="ralph20060412/google-mobile-services" remote="gitea" revision="udc-qpr2" clone-depth="1" />
 
   <!-- Hardware -->
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="statix" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="statix" />
-  <project path="hardware/nxp/nfc" name="android_hardware_nxp_nfc" remote="statix" />
+  <project path="hardware/nxp/nfc" name="android_hardware_exp_nfc" remote="statix" />
   <project path="hardware/statix/compat" name="android_hardware_statix_compat" remote="statix" />
   <project path="hardware/statix/interfaces" name="android_hardware_statix_interfaces" remote="statix" />
 
@@ -105,7 +105,7 @@
   <project path="system/sepolicy" name="android_system_sepolicy" remote="statix" />
 
   <!-- Tools -->
-  <project path="tools/extract-utils" name="android_tools_extract-utils" remote="statix" revision="tm" />
+  <project path="tools/extract-utils" name="android_tools_extract-utils" remote="statix" />
 
   <!-- Vendor -->
   <project path="vendor/google/interfaces" name="android_vendor_google_interfaces" remote="statix" />
