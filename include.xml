@@ -40,6 +40,9 @@
   </project>
 
   <!-- Device -->
+  <project path="device/manifests" name="android_device_manifests" remote="statix" revision="udc">
+    <linkfile src="build.sh" dest="build.sh" />
+  </project>
   <project path="device/statix/sepolicy" name="android_device_statix_sepolicy" remote="statix" />
 
   <!-- External -->
