@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Device Surya-->
+  <project path="device/xiaomi/surya" name="surya-aosp/private_xiaomi_surya" remote="github" revision="statix" />
+  <project path="device/xiaomi/surya-kernel" name="surya-aosp/device_xiaomi_surya-kernel" remote="github" revision="master" />
+  <project path="vendor/xiaomi/surya" name="surya-aosp/vendor_xiaomi_surya" remote="github" revision="aosp" />
+  <project path="vendor/gcgop" name="surya-aosp/vendor_gcgop" remote="github" revision="qpr2" />
+  <project path="firmware/xiaomi/surya" name="apaosha/firmware_xiaomi_surya" remote="gitlab" revision="tiramisu" />
+
+</manifest>

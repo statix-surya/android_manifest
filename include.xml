@@ -25,7 +25,7 @@
   <project path="bionic" name="android_bionic" remote="statix" />
 
   <!-- Build -->
-  <project path="build/make" name="android_build" remote="statix" groups="pdk" >
+  <project path="build/make" name="statix-surya/android_build" remote="github" revision="udc-qpr3" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -34,16 +34,13 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="android_build_soong" remote="statix" groups="pdk,tradefed" >
+  <project path="build/soong" name="statix-surya/android_build_soong" remote="github" revision="udc-qpr3" groups="pdk,tradefed" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
   <!-- Device -->
-  <project path="device/manifests" name="android_device_manifests" remote="statix" revision="udc">
-    <linkfile src="build.sh" dest="build.sh" />
-  </project>
-  <project path="device/statix/sepolicy" name="android_device_statix_sepolicy" remote="statix" />
+  <project path="device/statix/sepolicy" name="statix-surya/android_device_statix_sepolicy" remote="github" revision="udc-qpr3" />
 
   <!-- External -->
   <project path="external/gptfdisk" name="android_external_gptfdisk" remote="statix" />
@@ -51,11 +48,12 @@
   <project path="external/tinycompress" name="android_external_tinycompress" remote="statix" />
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="statix" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="statix" />
+  <project path="external/libcxx" name="statix-surya/android_external_libcxx" remote="github" revision="udc-qpr3" />
 
   <!-- Frameworks -->
-  <project path="frameworks/av" name="android_frameworks_av" remote="statix" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="statix" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="statix" />
+  <project path="frameworks/av" name="statix-surya/android_frameworks_av" remote="github" revision="udc-qpr3" />
+  <project path="frameworks/base" name="statix-surya/android_frameworks_base" remote="github" revision="udc-qpr3" />
+  <project path="frameworks/native" name="statix-surya/android_frameworks_native" remote="github" revision="udc-qpr3" />
 
   <!-- Google Mobile Services -->
   <project path="vendor/gms" name="StatiXOS/google-mobile-services" remote="gitea" revision="udc-qpr3" clone-depth="1" />
@@ -64,11 +62,11 @@
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="statix" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="statix" />
   <project path="hardware/nxp/nfc" name="android_hardware_nxp_nfc" remote="statix" />
-  <project path="hardware/statix/compat" name="android_hardware_statix_compat" remote="statix" />
-  <project path="hardware/statix/interfaces" name="android_hardware_statix_interfaces" remote="statix" />
+  <project path="hardware/statix/compat" name="statix-surya/android_hardware_statix_compat" remote="github" revision="udc-qpr3" />
+  <project path="hardware/statix/interfaces" name="statix-surya/android_hardware_statix_interfaces" remote="github" revision="udc-qpr3" />
 
   <!-- Manifest -->
-  <project path="manifest" name="android_manifest" remote="statix" />
+  <project path="manifest" name="statix-surya/android_manifest" remote="github" revision="udc-qpr3"/>
 
   <!-- NXP -->
   <project path="vendor/nxp/nfc" name="android_vendor_nxp_nfc" remote="statix" revision="tm"/>
@@ -82,12 +80,13 @@
   <project path="packages/apps/Aperture" name="android_packages_apps_Aperture" remote="statix" />
   <project path="packages/apps/BtHelper" name="android_packages_apps_BtHelper" remote="statix" revision="udc" />
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="statix" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="statix" />
+  <project path="packages/apps/ParanoidSense" name="statix-surya/android_packages_apps_ParanoidSense" remote="github" revision="fourteen" />
+  <project path="packages/apps/Settings" name="statix-surya/android_packages_apps_Settings" remote="github" revision="udc-qpr3"/>
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="statix" />
   <project path="packages/apps/Statix/ColorStub" name="android_packages_apps_Statix_ColorStub" remote="statix" />
   <project path="packages/apps/Statix/Launcher" name="android_packages_apps_Statix_Launcher" remote="statix" />
-  <project path="packages/apps/Statix/Settings" name="android_packages_apps_Statix_Settings" remote="statix" />
-  <project path="packages/apps/Statix/SystemUI" name="android_packages_apps_Statix_SystemUI" remote="statix" />
+  <project path="packages/apps/Statix/Settings" name="statix-surya/android_packages_apps_Statix_Settings" remote="github" revision="udc-qpr3"  />
+  <project path="packages/apps/Statix/SystemUI" name="statix-surya/android_packages_apps_Statix_SystemUI" remote="github" revision="udc-qpr3" />
   <project path="packages/apps/Statix/Wallpapers" name="android_packages_apps_Statix_Wallpapers" remote="statix" />
   <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="statix" />
   <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="statix" />
@@ -111,8 +110,10 @@
   <project path="tools/extract-utils" name="android_tools_extract-utils" remote="statix" />
 
   <!-- Vendor -->
+  <project path="vendor/custom-preference" name="statix-surya/android_vendor_custom-preference" remote="github" revision="udc-qpr3" />
   <project path="vendor/google/interfaces" name="android_vendor_google_interfaces" remote="statix" />
-  <project path="vendor/statix" name="android_vendor_statix" remote="statix">
+  <project path="vendor/hardware/xiaomi" name="statix-surya/android_vendor_hardware_xiaomi" remote="github" revision="udc-qpr3" />
+  <project path="vendor/statix" name="statix-surya/android_vendor_statix" remote="github" revision="udc-qpr3">
     <linkfile src="build/stop_scan.mk" dest="kernel/Android.mk" />
   </project>
   <project path="vendor/statix-prebuilts" name="android_vendor_statix-prebuilts" remote="statix" />
