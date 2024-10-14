@@ -21,6 +21,9 @@
   <!-- ART -->
   <project path="art" name="android_art" remote="statix" />
 
+  <!-- Libcore -->
+  <project path="libcore" name="statix-surya/android_libcore" remote="github" revision="udc-qpr3" />
+
   <!-- Bionic-->
   <project path="bionic" name="android_bionic" remote="statix" />
 
@@ -38,6 +41,7 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  <project path="build/release" name="statix-surya/android_build_release" remote="github" revision="udc-qpr3" />
 
   <!-- Device -->
   <project path="device/statix/sepolicy" name="statix-surya/android_device_statix_sepolicy" remote="github" revision="udc-qpr3" />
@@ -90,6 +94,8 @@
   <project path="packages/apps/Statix/Wallpapers" name="android_packages_apps_Statix_Wallpapers" remote="statix" />
   <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="statix" />
   <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="statix" />
+  <project path="packages/modules/IntentResolver" name="statix-surya/android_packages_modules_IntentResolver" remote="github" revision="udc-qpr3" />
+  <project path="packages/modules/Wifi" name="statix-surya/android_packages_modules_Wifi" remote="github" revision="udc-qpr3" />
   <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="statix" />
 
   <!-- Platform Testing -->
